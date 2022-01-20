@@ -6,10 +6,7 @@ from presets import Presets
 from bs4 import BeautifulSoup
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-
-
-if bool(os.environ.get("ENV", False)):
-    from config import Config
+from config import Config
 
 # -------------------------- Bot Configuration ---------------------------------------------- #
 Bot = Client(
