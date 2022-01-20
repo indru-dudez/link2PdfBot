@@ -9,8 +9,6 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 
 
 if bool(os.environ.get("ENV", False)):
-    from sample_config import Config
-else:
     from config import Config
 
 # -------------------------- Bot Configuration ---------------------------------------------- #
